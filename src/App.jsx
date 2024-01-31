@@ -22,15 +22,15 @@ const logosData = [
   ];
 
   const projetosWebData = [
-    { src: 'assets/Fidelius.png', alt: 'Website/Gamer Site', tipo: 'Software' },
-    { src: 'assets/portalifpb.png', alt: 'Redesign/PortalIFPB', tipo: 'Redesign' },
-    { src: 'assets/games.png', alt: 'Website/Online Shop', tipo: 'Website' },
+    { src: 'assets/Fidelius.png', alt: 'Software', tipo: 'Software/Semiologia' },
+    { src: 'assets/portalifpb.png', alt: 'Redesign/PortalIFPB', tipo: 'Redesign/PortalIFPB' },
+    { src: 'assets/games.png', alt: 'Website/Online Shop', tipo: 'Website/Loja de Games' },
   ];
 
   const projetosMobileData = [
-    { src: 'assets/nubank.png', alt: 'Website/Gamer Site', tipo: 'Software' },
-    { src: 'assets/buscacep.png', alt: 'Redesign/PortalIFPB', tipo: 'Redesign' },
-    { src: 'assets/chester.png', alt: 'Website/Online Shop', tipo: 'Website' },
+    { src: 'assets/nubank.png', alt: 'Redesign', tipo: 'Redesign/Nubank' },
+    { src: 'assets/buscacep.png', alt: 'APP', tipo: 'App/BuscaCEP' },
+    { src: 'assets/chester.png', alt: 'App', tipo: 'App/Barbearia' },
   ];
 
 function App() {
@@ -51,9 +51,9 @@ function App() {
     <Logos logosData={logosData} />
     <Projetos tipo="Web" imagens={projetosWebData} tamanho='400px' />
     <Projetos tipo="Mobile" imagens={projetosMobileData} tamanho='250px'/>
+    <h1>Veja todos os projetos no GitHub <span className="fab fa-github"></span></h1>
     <footer>
     <Footer/>
-
     </footer>
     </>
   )

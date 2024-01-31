@@ -17,6 +17,7 @@ body {
   color: #ffffff;
   background: linear-gradient(to right, #010e1f, #010e1f);
   background-size: cover;
+  
 }
 
 h1 {
@@ -28,6 +29,7 @@ h1 {
   background: linear-gradient(to left, #f18324, #f18324);
   padding: 20px;
   color: #0d2226;
+ 
 }
 
 h2 {
