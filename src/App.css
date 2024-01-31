@@ -17,19 +17,17 @@ body {
   color: #ffffff;
   background: linear-gradient(to right, #010e1f, #010e1f);
   background-size: cover;
-  
 }
 
 h1 {
   font-family: monospace;
-  width: 100%;
-  margin: 10px 0px;
+  margin: 0px 550px;
   text-align: center;
-  border-top: 5px solid #ffffff;
+  border-left: 5px solid #ffffff;
   background: linear-gradient(to left, #f18324, #f18324);
   padding: 20px;
   color: #0d2226;
- 
+  border-radius: 5px;
 }
 
 h2 {
@@ -307,11 +305,8 @@ nav li a {
   background: linear-gradient(to left, #ffffff, #ffffff);
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
   padding: 20px;
   color: #0d2226;
-  overflow: hidden;
-  white-space: nowrap;
 }
 
 .logos-container {
