@@ -51,7 +51,9 @@ function App() {
     <Logos logosData={logosData} />
     <Projetos tipo="Web" imagens={projetosWebData} tamanho='400px' />
     <Projetos tipo="Mobile" imagens={projetosMobileData} tamanho='250px'/>
-    <h1>Veja todos os projetos no GitHub <span className="fab fa-github"></span></h1>
+    <a href="https://github.com/gustavobardavid">
+      <h1>Veja todos os projetos no GitHub <span className="fab fa-github"></span></h1>
+    </a>
     <footer>
     <Footer/>
     </footer>

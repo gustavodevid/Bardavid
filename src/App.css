@@ -301,10 +301,8 @@ nav li a {
 }
 
 .logos {
-  font-family: monospace;
   width: 100%;
-  margin: 10px 0px;
-  text-align: center;
+  margin: 0px 0px;
   border-top: 5px solid #ffffff;
   background: linear-gradient(to left, #ffffff, #ffffff);
   background-size: cover;
@@ -312,6 +310,8 @@ nav li a {
   background-repeat: no-repeat;
   padding: 20px;
   color: #0d2226;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .logos-container {
@@ -322,23 +322,41 @@ nav li a {
 .logos-container img {
   width: 60px;
 }
+
 .logos-wrapper {
   display: flex;
   animation: scroll 20s linear infinite; /* Ajuste a duração conforme necessário */
+  transition: transform 0.5s ease; /* Adiciona uma transição suave ao transform */
+  will-change: transform;
 }
 
 .logo {
   margin-right: 50px; /* Espaçamento entre as logos */
 }
-
+.logos::after {
+  background: linear-gradient(to left,hsla(0,0%,97%,0),var(#fff));
+  left: 0;
+}
+.logos::before {
+  opacity: 0.6;
+}
+.logos:after, .logos:before {
+  content: "";
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 250px;
+  z-index: 2;
+}
 @keyframes scroll {
   0% {
-    transform: translateX(105%);
+    transform: translateX(100%);
   }
   100% {
-    transform: translateX(-120%); /* Mova para a esquerda */
+    transform: translateX(-100%); /* Mova para a esquerda */
   }
 }
+
 
 .section-container {
   padding: 5rem 0;
@@ -370,8 +388,19 @@ nav li a {
   background-color: #fff;
   border: 1px solid #ddd;
   height: 40vh;
+  font-family: sans-serif;
   border-radius: 5px;
   padding: 1.5rem;
+  transition: background-color 0.5s ease, transform 0.5s ease;
+}
+.card-content:hover {
+  background-color: #f18324;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transform: translateY(-25px);
+}
+
+.card-content:hover * {
+  color: #fff;
 }
 
 .card-content img {
@@ -379,19 +408,12 @@ nav li a {
 }
 
 .card-icon {
-  color: #000000;
   font-size: 3rem;
   margin-bottom: 1rem;
 }
 
-
 .card-title {
-  color:#000000;
   margin-bottom: 0.5rem;
-}
-
-.card-text {
-  color: #333;
 }
 
 .education-container {
