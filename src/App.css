@@ -41,10 +41,9 @@ h2 {
 
 aside {
   display: flex;
-  width: 100%;
   box-sizing: border-box;
   margin: 20px;
-  padding: 20px;
+  padding: 200px;
   gap: 150px;
 }
 
@@ -266,7 +265,7 @@ nav li a {
       justify-content: center;
       text-align: center;
       flex-direction: column;
-      width: 100%;
+      padding: 0px;
   }
   #img {
       width: 100%;
@@ -328,21 +327,7 @@ nav li a {
 .logo {
   margin-right: 50px; /* Espaçamento entre as logos */
 }
-.logos::after {
-  background: linear-gradient(to left,hsla(0,0%,97%,0),var(#fff));
-  left: 0;
-}
-.logos::before {
-  opacity: 0.6;
-}
-.logos:after, .logos:before {
-  content: "";
-  height: 100%;
-  position: absolute;
-  top: 0;
-  width: 250px;
-  z-index: 2;
-}
+
 @keyframes scroll {
   0% {
     transform: translateX(100%);
@@ -468,3 +453,34 @@ nav li a {
 }
 
 
+.proposta {
+  background-color: #f18324;
+  padding: 100px;
+  margin: 10px 0px;
+}
+
+.proposta h2 {
+  color: #fff;
+  font-weight: 800;
+  font-family:'Courier New', Courier, monospace
+}
+
+.proposta button {
+  background-color:#010e1f;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.5s ease, transform 0.5s ease;
+}
+
+.proposta button:hover {
+  background-color: #fff;
+  color: #010e1f;
+}

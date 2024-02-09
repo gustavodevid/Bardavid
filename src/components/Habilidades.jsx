@@ -8,15 +8,15 @@ const Habilidades = ()=>{
                 <div className="card-section">
                     <div className="card-content">
                         <i className="card-icon fas fa-desktop"></i>
-                        <h2 className="card-title">Design de Interfaces Web</h2>
-                        <p className="card-text">Experiência no desenvolvimento de aplicações web front-end e back-end. Conhecimento em HTML, CSS e JavaScript, assim como em frameworks populares como React, Angular ou Vue.js.</p>
+                        <h2 className="card-title">Desenvolvimento Web</h2>
+                        <p className="card-text">Experiência no desenvolvimento de aplicações web front-end e back-end. Conhecimento em Spring, HTML, CSS e JavaScript, assim como em frameworks populares como React, Angular ou Vue.js. </p>
                     </div>
                 </div>
                 <div className="card-section">
                     <div className="card-content">
-                        <i className="card-icon fab fa-github"></i>
-                        <h2 className="card-title">Gerência em Projetos</h2>
-                        <p className="card-text">Experiência em sistemas de controle de versão, como Git. Capacidade de trabalhar eficientemente em equipe, rastrear alterações de código e resolver conflitos.</p>
+                        <i className="card-icon fas fa-mobile"></i>
+                        <h2 className="card-title">Desenvolvimento Mobile</h2>
+                        <p className="card-text">Prototipagem de layouts mobile com ênfase no Touch-friendly e usabilidade. Foco na experiência eficaz entre negócio e cliente. </p>
                     </div>
                 </div>
                 <div className="card-section">
