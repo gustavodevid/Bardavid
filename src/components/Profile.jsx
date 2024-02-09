@@ -89,7 +89,7 @@ const Profile = ({foto}) => {
             <h1>Hi! Gustavo here</h1>
 
             <h1>A Software Engineer, Future Professor and Researcher</h1>
-            <h2>Read <a href="./aboutme.html">more</a> about me</h2>
+            <h2>Read <a href="#">more</a> about me</h2>
 
         </div>
         </>
