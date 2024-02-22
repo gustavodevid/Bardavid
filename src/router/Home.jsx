@@ -6,18 +6,22 @@ import Cabecalho from '../components/Cabecalho'
 import Profile from '../components/Profile'
 import Navbar from '../components/Navbar'
 import Habilidades from '../components/Habilidades'
-import Logos from '../components/Logos'
 import Projetos from '../components/Projetos'
 import Footer from '../components/Footer'
-import logosData from '../js/logosData.js'
 import projetosMobileData from '../js/projetosMobileData.js'
 import projetosWebData from '../js/projetosWebData.js'
 import Proposta from '../components/Proposta.jsx'
+import LogoCollection from '../components/LogoCollection.jsx'
+import Logos from '../components/Logos.jsx';
+import logosData from '../js/logosData.js';
+import { Typography } from '@mui/material'
 
 function Home() {
     return (
       <>
-       <Cabecalho/>
+      <div>
+       <Cabecalho />
+      </div>
        <Navbar/>
        <aside>
           <Profile
@@ -29,8 +33,9 @@ function Home() {
               </span></h1>
       </a>
       <Habilidades/>
-      <Logos logosData={logosData} />
+      <Logos logosData={logosData}/>
       <Projetos tipo="Web" imagens={projetosWebData} tamanho='400px' />
+      <LogoCollection />
       <Projetos tipo="Mobile" imagens={projetosMobileData} tamanho='250px'/>
       <a href="https://github.com/gustavobardavid">
         <h1>Veja todos os projetos no GitHub <span className="fab fa-github"></span></h1>
