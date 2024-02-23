@@ -2,7 +2,6 @@ import React from 'react';
 import { Card, CardContent, CardMedia, Typography, Button, IconButton, Chip } from '@mui/material';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import JSIcon from '@mui/icons-material/Javascript';
 
 const CardComponent = ({ projeto }) => {
   return (
@@ -32,7 +31,7 @@ const CardComponent = ({ projeto }) => {
           <GitHubIcon />
         </IconButton>
         <div style={{ marginTop: '15px', display: 'grid', gridTemplateColumns:'repeat(3,1fr)', gap: '5px' }}>
-          <Chip color='error' icon={<JSIcon />} label="TypeScript" />
+          <Chip color='error' label="TypeScript" />
           <Chip color='primary' label="React" />
           <Chip label="Vite" />
         </div>
