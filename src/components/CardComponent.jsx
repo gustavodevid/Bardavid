@@ -7,7 +7,7 @@ import JSIcon from '@mui/icons-material/JavaScript';
 const CardComponent = ({ projeto }) => {
   return (
     <Card sx={{ maxWidth: 400, 
-    backgroundColor: '#F2E7C9', 
+    backgroundColor: '#fff', 
     color: 'var(--secondary)',
     borderRadius: '5px',  
     boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.2)',
@@ -31,9 +31,9 @@ const CardComponent = ({ projeto }) => {
         <IconButton aria-label="github" href="https://github.com/gustavobardavid">
           <GitHubIcon />
         </IconButton>
-        <div style={{ marginTop: '15px' }}>
-          <Chip icon={<JSIcon />} label="TypeScript" />
-          <Chip label="React" />
+        <div style={{ marginTop: '15px', display: 'grid', gridTemplateColumns:'repeat(3,1fr)', gap: '5px' }}>
+          <Chip color='error' icon={<JSIcon />} label="TypeScript" />
+          <Chip color='primary' label="React" />
           <Chip label="Vite" />
         </div>
       </CardContent>
