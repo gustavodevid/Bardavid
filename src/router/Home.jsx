@@ -15,6 +15,7 @@ import LogoCollection from '../components/LogoCollection.jsx'
 import Logos from '../components/Logos.jsx';
 import logosData from '../js/logosData.js';
 import { Typography } from '@mui/material'
+import FotoProfile from '../components/FotoProfile.jsx'
 
 function Home() {
     return (
@@ -26,6 +27,10 @@ function Home() {
        <aside>
           <Profile
           foto = './assets/eu2.jpg'/>
+       </aside>
+       <aside>
+          <FotoProfile foto = './assets/eu2.jpg' />
+
        </aside>
        <a href=" https://wa.me/5583991135073/?text=Oi,+Gustavo!+Quero+solicitar+um+orçamento">
           <h1>Solicitar um orçamento<span className="material-symbols-outlined">

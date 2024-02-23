@@ -1,3 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  --primary: #E0E1DD;
+  --secondary: #0D1B2A;
+  --terciary: #ebddc3;
+  --quaternary: #f18324;
+  
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 html {
   scroll-behavior:smooth;
 }
@@ -15,10 +34,10 @@ html {
 body {
   font-size: 13px;
   font-weight: 400;
-  font-family: monospace;
   margin: 0 0;
+  font-family: monospace;
   color: #ffffff;
-  background: linear-gradient(to right, #010e1f, #010e1f);
+  background: linear-gradient(to right, var(--primary), var(--primary));
   background-size: cover;
 }
 
@@ -27,18 +46,18 @@ h1 {
   margin: 0px 550px;
   text-align: center;
   border-left: 5px solid #ffffff;
-  background: linear-gradient(to left, #f18324, #f18324);
+  background: linear-gradient(to left, var(--secondary), var(--secondary));
   padding: 20px;
-  color: #0d2226;
+  color: var(--primary);
   border-radius: 5px;
 }
 
 h2 {
   text-align: center;
-  color: #d2d0e6;
   margin: 25px 25px;
-  opacity: 0.7;
+  color: var(--secondary);
   font-size: 20px;
+  opacity: 0.8;
   font-weight: 600;
 }
 
@@ -60,12 +79,13 @@ aside h1 {
   background-position: center;
   background-repeat: no-repeat;
   padding: 20px;
-  color: #ffffff;
+  opacity: 0.8;
+  color: var(--secondary);
 }
 
 aside h2 {
   text-align: left;
-  color: #d2d0e6;
+  color: var(--secondary);
   margin-top: 0px;
   margin-bottom: 0px;
   opacity: 0.7;
@@ -84,12 +104,12 @@ aside img:hover {
 
 a {
   text-decoration: none;
-  color: #f18324;
+  color: var(--secondary);
 }
 
 aside a {
   text-decoration: underline;
-  color: #f18324;
+  color: var(--secondary);
   font-weight: 600;
 }
 
@@ -120,7 +140,7 @@ footer {
 
 footer h2 {
   text-align: center;
-  color: #d2d0e6;
+  color: var(--secondary);
   margin-top: 0px;
   margin-bottom: 0px;
   opacity: 0.7;
@@ -144,7 +164,7 @@ nav {
   display: flex;
   justify-content: center;
   padding: 0px;
-  background-color: #ffffff;
+  background-color:var(--primary);
   box-sizing: border-box;
 }
 
@@ -215,7 +235,7 @@ nav li a {
   flex: 0 0 99%;
   margin-right: 20px;
   border: 1px solid #010e1f;
-  background-color: #f18324;
+  background-color: var(--secondary);
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -235,7 +255,7 @@ nav li a {
 
 .next-button {
   top: 50%;
-  background-color: #f18324;
+  background-color: var(--secondary);
   color: #fff;
   border: none;
   width: 50px;
@@ -254,7 +274,7 @@ nav li a {
 }
 
 .next-button:active {
-  background-color: #f18324;
+  background-color: var(--secondary);
 }
 
 @media screen and (max-width: 600px) {
@@ -377,7 +397,7 @@ nav li a {
   transition: background-color 0.5s ease, transform 0.5s ease;
 }
 .card-content:hover {
-  background-color: #f18324;
+  background-color: var(--secondary);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   transform: translateY(-25px);
 }
@@ -457,7 +477,7 @@ nav li a {
 
 
 .proposta {
-  background-color: #f18324;
+  background-color: var(--secondary);
   padding: 100px;
   margin: 10px 0px;
 }

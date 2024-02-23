@@ -1,9 +1,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
 
-
 .btn {
-    background-color:#f18324;
+    background-color:var(--secondary);
     display: grid;
     place-items: center;
     height: 10vh;
