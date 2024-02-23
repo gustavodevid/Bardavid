@@ -8,10 +8,8 @@ import '../styles/card.css'
 const Profile = () => {
     return (
         <>
-
         <div>
-            <h1>Hello, I'm Gustavo David</h1>
-
+            <h3>Hello, I'm Gustavo David</h3>
         </div>
         </>
     );

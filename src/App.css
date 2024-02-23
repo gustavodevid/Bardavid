@@ -7,14 +7,24 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  --primary: #E0E1DD;
-  --secondary: #0D1B2A;
+  --primary: #010e1f;
+  --secondary: #f18324;
   --terciary: #ebddc3;
   --quaternary: #f18324;
   
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+::-webkit-scrollbar {
+  width: 10px; 
+}
+::-webkit-scrollbar-track {
+  background: var(--secondary); 
+}
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 6px; 
 }
 
 html {
@@ -91,6 +101,22 @@ aside h2 {
   opacity: 0.7;
   font-size: 18px;
   font-weight: 600;
+}
+
+aside h3 {
+  font-size: 28px;
+  font-weight: 600;
+  font-family: monospace;
+  margin-left: 300px;
+  text-align: center;
+  border: none;
+  background: transparent;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px;
+  opacity: 0.9;
+  color: var(--secondary);
 }
 
 aside img {
@@ -289,6 +315,11 @@ nav li a {
       text-align: center;
       flex-direction: column;
       padding: 0px;
+  }
+  aside h3 {
+    margin-left: 10px;
+    margin-bottom: 200px;
+    padding: 100px;
   }
   #img {
       width: 100%;
