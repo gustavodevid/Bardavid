@@ -7,9 +7,9 @@ const CardComponent = ({ projeto }) => {
   return (
     <Card sx={{ maxWidth: 400, 
     backgroundColor: '#fff', 
-    color: 'var(--primary)',
+    color: 'var(--secondary)',
     borderRadius: '5px',  
-    boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.9)',
+    boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.2)',
     }}>
       <CardMedia
         component="img"
