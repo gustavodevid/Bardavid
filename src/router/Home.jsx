@@ -14,8 +14,10 @@ import Proposta from '../components/Proposta.jsx'
 import LogoCollection from '../components/LogoCollection.jsx'
 import Logos from '../components/Logos.jsx';
 import logosData from '../js/logosData.js';
-import { Typography } from '@mui/material'
+import { Grid, Typography } from '@mui/material'
 import FotoProfile from '../components/FotoProfile.jsx'
+import CardComponent from '../components/CardComponent.jsx';
+import ProjetosData from '../js/projetosData.js';
 
 function Home() {
     return (
@@ -38,8 +40,16 @@ function Home() {
               </span></h1>
       </a>
       <Logos logosData={logosData}/>
-      <Projetos tipo="Web" imagens={projetosWebData} tamanho='400px' />
-      <Projetos tipo="Mobile" imagens={projetosMobileData} tamanho='250px'/>
+      <Grid container spacing={2}   sx={{
+    alignItems: 'center',
+    justifyContent: 'center', marginBottom: 5
+  }}>
+      {ProjetosData.map(projeto => (
+        <Grid key={projeto.id} item xs={12} sm={6} md={4} lg={3}>
+         <CardComponent projeto={projeto} />
+        </Grid>
+      ))}
+      </Grid>
       <a href="https://github.com/gustavobardavid">
         <h1>Veja todos os projetos no GitHub <span className="fab fa-github"></span></h1>
       </a>
