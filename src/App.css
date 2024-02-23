@@ -72,11 +72,12 @@ h2 {
 }
 
 aside {
+  position: relative;
+  width: 100%;
   display: flex;
-  box-sizing: border-box;
-  margin: 20px;
-  padding: 200px;
-  gap: 150px;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 100px;
 }
 
 aside h1 {
@@ -103,29 +104,25 @@ aside h2 {
   font-weight: 600;
 }
 
-aside h3 {
-  font-size: 28px;
-  font-weight: 600;
+.hello {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hello h3 {
+  font-size: 48px;
+  font-weight: 900;
   font-family: monospace;
-  margin-left: 300px;
-  text-align: center;
-  border: none;
-  background: transparent;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 20px;
   opacity: 0.9;
   color: var(--secondary);
 }
 
-aside img {
-  width: 100px;
-  height: 100px;
-}
-
-aside img:hover {
-  transform: scale(1.1);
+.profile-text {
+  margin-left:  0px;
 }
 
 a {
@@ -316,10 +313,8 @@ nav li a {
       flex-direction: column;
       padding: 0px;
   }
-  aside h3 {
-    margin-left: 10px;
-    margin-bottom: 200px;
-    padding: 100px;
+  .hello {
+    height: 100vh;
   }
   #img {
       width: 100%;
@@ -354,8 +349,6 @@ nav li a {
 .logos {
   width: 100%;
   margin: 0px 0px;
-  border-top: 5px solid #ffffff;
-  background: linear-gradient(to left, #ffffff, #ffffff);
   background-size: cover;
   background-position: center;
   padding: 20px;

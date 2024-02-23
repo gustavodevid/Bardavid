@@ -3,10 +3,6 @@
 :root {
     --background: #000000;
 }
-
- .container {
-    margin: 50px 500px;
-}  
   
 .profile-wrapper {
     width: 250px;
@@ -34,9 +30,6 @@
 }
  
 .profile .profile-image {
-    position: absolute;
-    top: 0px;
-    left: 0px;
     width: 100%;
     height: 100%;
     z-index: 2;

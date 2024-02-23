@@ -24,13 +24,12 @@ function Home() {
        <Cabecalho />
       </div>
        <Navbar/>
-       <aside>
+       <div className='hello'>
           <Profile
           foto = './assets/eu2.jpg'/>
-       </aside>
+          </div>
        <aside>
           <FotoProfile foto = './assets/eu2.jpg' />
-
        </aside>
        <a href=" https://wa.me/5583991135073/?text=Oi,+Gustavo!+Quero+solicitar+um+orçamento">
           <h1>Solicitar um orçamento<span className="material-symbols-outlined">
