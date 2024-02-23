@@ -500,19 +500,19 @@ nav li a {
 
 
 .proposta {
-  background-color: var(--secondary);
+  background-color: var(--primary);
   padding: 100px;
   margin: 10px 0px;
 }
 
 .proposta h2 {
-  color: #fff;
+  color: var(--secondary);
   font-weight: 800;
   font-family:
 }
 
 .proposta button {
-  background-color:#010e1f;
+  background-color:var(--secondary);
   color: #fff;
   padding: 10px 20px;
   border: none;

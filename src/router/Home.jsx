@@ -31,15 +31,14 @@ function Home() {
        <aside>
           <FotoProfile foto = './assets/eu2.jpg' />
        </aside>
+      <Habilidades/>
        <a href=" https://wa.me/5583991135073/?text=Oi,+Gustavo!+Quero+solicitar+um+orçamento">
           <h1>Solicitar um orçamento<span className="material-symbols-outlined">
               arrow_outward
               </span></h1>
       </a>
-      <Habilidades/>
       <Logos logosData={logosData}/>
       <Projetos tipo="Web" imagens={projetosWebData} tamanho='400px' />
-      <LogoCollection />
       <Projetos tipo="Mobile" imagens={projetosMobileData} tamanho='250px'/>
       <a href="https://github.com/gustavobardavid">
         <h1>Veja todos os projetos no GitHub <span className="fab fa-github"></span></h1>
