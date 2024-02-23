@@ -6,7 +6,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 const CardComponent = ({ projeto }) => {
   return (
     <Card sx={{ maxWidth: 400, 
-    backgroundColor: '#fff', 
+    backgroundColor: '#F2E7C9', 
     color: 'var(--secondary)',
     borderRadius: '5px',  
     boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.2)',
