@@ -311,7 +311,6 @@ nav li a {
       justify-content: center;
       text-align: center;
       flex-direction: column;
-      padding: 0px;
   }
   .hello {
     height: 100vh;
