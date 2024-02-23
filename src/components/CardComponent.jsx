@@ -31,10 +31,12 @@ const CardComponent = ({ projeto }) => {
           <GitHubIcon />
         </IconButton>
         <div style={{ marginTop: '15px', display: 'grid', gridTemplateColumns:'repeat(3,1fr)', gap: '5px' }}>
-          <Chip color='error' label="TypeScript" />
-          <Chip color='primary' label="React" />
-          <Chip label="Vite" />
-        </div>
+        {projeto.tecnologies.map(tecnologie => (
+          <div key={tecnologie.id}>
+            <Chip color={tecnologie.color} label={tecnologie.name} />
+          </div>
+          ))}
+          </div>
       </CardContent>
     </Card>
   );
