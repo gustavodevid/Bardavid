@@ -2,7 +2,7 @@ import React from 'react';
 import { Card, CardContent, CardMedia, Typography, Button, IconButton, Chip } from '@mui/material';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import JSIcon from '@mui/icons-material/JavaScript';
+import JSIcon from '@mui/icons-material/Javascript';
 
 const CardComponent = ({ projeto }) => {
   return (
