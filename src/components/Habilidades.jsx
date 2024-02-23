@@ -1,7 +1,7 @@
 const Habilidades = ()=>{
     return (
         <>
-        <h2>Minhas habilidades</h2>
+        <h2>Skills</h2>
     <section className="section-container">
         <div className="section-content">
             <div className="card-container">

@@ -33,16 +33,12 @@ function Home() {
        <aside>
           <FotoProfile foto = './assets/eu2.jpg' />
        </aside>
+         <Logos logosData={logosData}/>
       <Habilidades/>
-       <a href=" https://wa.me/5583991135073/?text=Oi,+Gustavo!+Quero+solicitar+um+orçamento">
-          <h1>Solicitar um orçamento<span className="material-symbols-outlined">
-              arrow_outward
-              </span></h1>
-      </a>
-      <Logos logosData={logosData}/>
+      <h2>Projetos</h2>
       <Grid container spacing={2}   sx={{
-    alignItems: 'center',
-    justifyContent: 'center', marginBottom: 5
+        alignItems: 'center',
+        justifyContent: 'center', marginBottom: 5
   }}>
       {ProjetosData.map(projeto => (
         <Grid key={projeto.id} item xs={12} sm={6} md={4} lg={3}>
