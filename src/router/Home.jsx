@@ -17,13 +17,11 @@ import ProjetosData from '../js/projetosData.js';
 function Home() {
     return (
       <>
-      <div>
-       <Cabecalho />
-      </div>
        <div className='hello'>
           <Profile
           foto = './assets/eu2.jpg'/>
           </div>
+      <br />
        <aside>
           <FotoProfile foto = './assets/eu2.jpg' />
        </aside>
@@ -47,6 +45,7 @@ function Home() {
         <h1>Veja todos os projetos no GitHub <span className="fab fa-github"></span></h1>
       </a>
       <Proposta />
+          <Cabecalho />
       <footer>
       <Footer/>
       </footer>
