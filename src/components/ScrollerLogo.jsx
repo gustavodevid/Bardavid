@@ -28,5 +28,4 @@ const ScrollerLogo = () => {
       </div>
     )
 }
-
 export default ScrollerLogo

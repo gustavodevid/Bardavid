@@ -6,7 +6,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 const CardComponent = ({ projeto }) => {
   return (
     <Card sx={{ maxWidth: 400, 
-    backgroundColor: '#fff', 
+    backgroundColor: 'var(--primary)', 
     color: 'var(--secondary)',
     borderRadius: '5px',  
     boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.2)',
@@ -18,16 +18,16 @@ const CardComponent = ({ projeto }) => {
         alt="Image"
       />
       <CardContent sx={{padding:4, gap: '5px', lineHeight: 1.5}}>
-        <Typography gutterBottom variant="h5" fontFamily={'monospace'} component="div">
+        <Typography gutterBottom variant="h5" fontFamily={'var(--fonte)'}  component="div">
           {projeto.title}
         </Typography>
-        <Typography sx={{margin:1}} variant="body2" fontFamily={'monospace'}>
+        <Typography sx={{margin:1}} variant="body2" fontFamily={'var(--fonte)'}>
           {projeto.subtitle}
         </Typography>
-        <Button sx={{margin:1}} endIcon={<ArrowForwardIcon />} variant="outlined" href="https://gowdb.vercel.app">
+        <Button sx={{margin:1}} endIcon={<ArrowForwardIcon />} variant="outlined" href={projeto.link} target='blank'>
           Ver mais
         </Button>
-        <IconButton aria-label="github" href="https://github.com/gustavobardavid">
+        <IconButton aria-label="github" href={projeto.git} target='blank'>
           <GitHubIcon />
         </IconButton>
         <div style={{ marginTop: '15px', display: 'grid', gridTemplateColumns:'repeat(3,1fr)', gap: '5px' }}>

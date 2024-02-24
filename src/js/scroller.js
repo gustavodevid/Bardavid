@@ -1,28 +1,22 @@
-import '../styles/styles.scss';
+import '../styles/styles.scss'
 
 const scrollers = document.querySelectorAll('.scroller');
+
 
 function addAnimation() {
   scrollers.forEach((scroller) => {
     // add data-animated="true" to every `.scroller` on the page
     scroller.setAttribute("data-animated", true);
-    
-    const scrollerInner = scroller.querySelector('.scroller__inner');
-    const scrollerInnerClone = scrollerInner.cloneNode(true); // Clone o scrollerInner
 
+
+    const scrollerInnerWrapper =  scroller.querySelector('.scroller__inner-wrappper');
+    const scrollerInner =  scroller.querySelector('.scroller__inner');
     const scrollerInnerContent = Array.from(scrollerInner.children);
-    
-    scrollerInnerContent.forEach(item => {
-      const duplicatedItem = item.cloneNode(true); 
-      duplicatedItem.setAttribute('aria-hidden', true);
-      scrollerInnerClone.appendChild(duplicatedItem);
-    });
 
-    // Substitua o scrollerInner original pelo clone
-    scroller.replaceChild(scrollerInnerClone, scrollerInner);
-  });
+    const dupilcatedItem = scrollerInner.cloneNode(true)
+    dupilcatedItem.setAttribute('aria-hidden', true)
+    scrollerInner.parentElement.appendChild(dupilcatedItem)
+  })
 }
 
-addAnimation();
-
-export default scrollers;
+addAnimation()
