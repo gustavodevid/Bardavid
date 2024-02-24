@@ -4,21 +4,15 @@ import '../styles/card.css'
 import '../vendor/fontawesome-free/css/all.min.css' 
 import Cabecalho from '../components/Cabecalho'
 import Profile from '../components/Profile'
-import Navbar from '../components/Navbar'
 import Habilidades from '../components/Habilidades'
-import Projetos from '../components/Projetos'
 import Footer from '../components/Footer'
-import projetosMobileData from '../js/projetosMobileData.js'
-import projetosWebData from '../js/projetosWebData.js'
 import Proposta from '../components/Proposta.jsx'
-import LogoCollection from '../components/LogoCollection.jsx'
 import Logos from '../components/Logos.jsx';
 import logosData from '../js/logosData.js';
 import { Grid, Typography } from '@mui/material'
 import FotoProfile from '../components/FotoProfile.jsx'
 import CardComponent from '../components/CardComponent.jsx';
 import ProjetosData from '../js/projetosData.js';
-import ScrollerLogo from '../components/ScrollerLogo.jsx';
 
 function Home() {
     return (
@@ -26,7 +20,6 @@ function Home() {
       <div>
        <Cabecalho />
       </div>
-       <Navbar/>
        <div className='hello'>
           <Profile
           foto = './assets/eu2.jpg'/>
