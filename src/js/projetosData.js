@@ -45,8 +45,4 @@ const Projetos = [
         ]
     }
   ]
-
-Projetos.forEach(projeto => {
-  console.log(projeto.tecnologies);
-});
 export default Projetos;
