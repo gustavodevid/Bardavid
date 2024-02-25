@@ -16,39 +16,22 @@ const Projetos = [
         }
       ]
     },
-    {
-        title: 'E-commerce',
-        subtitle: 'Uma loja de games online',
-        img: 'assets/games.png',
-        link:  'https://gustavobardavid.github.io/site-de-ecommerce/',
-        git: 'https://github.com/gustavobardavid/site-de-ecommerce/',
-        tecnologies: [
-          {
-            name: 'TypeScript',
-            color: 'primary'
-        },
-          {
-            name: 'Vite',
-            color: 'success'
-          }
-        ]
+  {
+    title: 'Interstellar',
+    subtitle: 'Image gallery of Nasa Images',
+    img: 'assets/interstellar.png',
+    link:  'https://appinterstellar.vercel.app/',
+    git: 'https://github.com/gustavobardavid/Interstelar/',
+    tecnologies: [
+      {
+        name: 'React',
+        color: 'primary'
     },
-    {
-        title: 'Fidelius',
-        subtitle:  'Sistema de Semiologia Farmacêutica',
-        img: 'assets/Fidelius.png',
-        link:  '#',
-        git: 'https://github.com/gustavobardavid/Fidelius/',
-        tecnologies: [
-          {
-            name: 'TypeScript',
-            color: 'primary'
-        },
-          {
-            name: 'Vite',
-            color: 'success'
-          }
-        ]
-    }
+      {
+        name: 'Vite',
+        color: 'success'
+      }
+    ]
+}
   ]
 export default Projetos;
