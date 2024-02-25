@@ -31,7 +31,7 @@ function Home() {
       <Grid className='projetos' container spacing={2}   
         sx={{
           alignItems: 'center',
-          justifyContent: 'center', marginBottom: 5
+          justifyContent: 'center'
         }}>
             {ProjetosData.map(projeto => (
               <Grid key={projeto.id} item xs={12} sm={6} md={4} lg={3}>
