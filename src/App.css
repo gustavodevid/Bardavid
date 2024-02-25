@@ -316,6 +316,9 @@ menu li {
 .cert-item {
   flex: 0 0 95%;
 }
+.projetos {
+  height: 100vh;
+}
 }
 
 .logos {
