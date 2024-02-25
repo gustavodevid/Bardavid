@@ -1,25 +1,21 @@
-import PropTypes from 'prop-types';
+import { Grid } from '@mui/material';
+import ProjetosData from '../js/projetosData.js';
+import CardComponent from './CardComponent.jsx';
 
-const Projetos = ({ tipo, imagens, tamanho }) => {
-  return (
-    <div>
-      <h2>Meus Projetos {tipo}</h2>
-      <div className="portfolio-grid">
-        {imagens.map((imagem, index) => (
-          <div key={index} className="portfolio-item">
-        <img src= {imagem.src} 
-        alt={imagem.alt} 
-        style={{ width: tamanho }} />
-            <h3>{imagem.tipo}</h3>
-          </div>
+const Projetos = () => {
+  return (    
+    <Grid className='projetos' container spacing={2}   
+    sx={{
+      alignItems: 'center',
+      justifyContent: 'center', marginBottom: 5
+    }}>
+        {ProjetosData.map(projeto => (
+          <Grid key={projeto.id} item xs={12} sm={6} md={4} lg={3}>
+          <CardComponent projeto={projeto} />
+          </Grid>
         ))}
-      </div>
-    </div>
+  </Grid>
   );
 }
-Projetos.propTypes = {
-    tipo: PropTypes.string.isRequired,
-    imagens: PropTypes.string.isRequired,
-    tamanho: PropTypes.string.isRequired
-  };
+
 export default Projetos;

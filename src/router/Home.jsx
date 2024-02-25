@@ -9,10 +9,11 @@ import Footer from '../components/Footer'
 import Proposta from '../components/Proposta.jsx'
 import Logos from '../components/Logos.jsx';
 import logosData from '../js/logosData.js';
-import { Grid, Typography } from '@mui/material'
+import { Grid } from '@mui/material'
 import FotoProfile from '../components/FotoProfile.jsx'
 import CardComponent from '../components/CardComponent.jsx';
 import ProjetosData from '../js/projetosData.js';
+import Projetos from '../js/projetosData.js'
 
 function Home() {
     return (
@@ -25,12 +26,9 @@ function Home() {
        <aside>
           <FotoProfile foto = './assets/eu2.jpg' />
        </aside>
-         <Logos logosData={logosData}/>
       <Habilidades/>
-      
-      <h2>Projetos</h2>
-
-      <Grid container spacing={2}   
+          <Logos logosData={logosData}/>  
+      <Grid className='projetos' container spacing={2}   
         sx={{
           alignItems: 'center',
           justifyContent: 'center', marginBottom: 5

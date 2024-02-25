@@ -75,6 +75,7 @@ h2 {
 aside {
   position: relative;
   width: 100%;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -365,7 +366,6 @@ menu li {
 
 .section-content {
   width: 1000px;
-  height: 40vh;
   margin: 0 auto;
   justify-content: center;
   text-align: center;
@@ -446,4 +446,9 @@ menu li {
 .proposta button:hover {
   background-color: #fff;
   color: #010e1f;
+}
+
+.projetos {
+  width: 100%;
+  height: 100vh;
 }

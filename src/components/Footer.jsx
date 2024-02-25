@@ -12,7 +12,7 @@ const Footer = () => {
         </section>
         <section>
             <menu>
-                <h2>Check out the <a href="http://">source code</a>. Current version 1.0</h2>
+                <h2>Check out the <a href="http://">source code</a>. Current version 1.1</h2>
                 <li>     
                 </li>
             </menu>
