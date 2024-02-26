@@ -2,7 +2,7 @@ const skills = [
     {
         icon: 'card-icon fas fa-desktop',
         title: 'Desenvolvimento Web',
-        subtitle: 'Experiência no desenvolvimento de aplicações web front-end e back-end. Conhecimento em Spring, HTML, CSS e JavaScript, assim como em frameworks populares como React, Angular ou Vue.js.'
+        subtitle: 'Experiência no desenvolvimento de aplicações web front-end e back-end. Conhecimento em Spring, HTML, CSS e JavaScript, assim como em frameworks populares como React, Angular ou Vite.js.'
     },
     {
         icon: 'card-icon fas fa-mobile',
