@@ -28,14 +28,14 @@ function Home() {
        </aside>
       <Habilidades/>
           <Logos logosData={logosData}/>  
-      <Grid className='projetos' container spacing={2}   
+      <Grid className='projetos' container spacing={1}   
         sx={{
           alignItems: 'center',
           justifyContent: 'center'
         }}>
             {ProjetosData.map(projeto => (
-              <Grid key={projeto.id} item xs={12} sm={6} md={4} lg={3}>
-              <CardComponent projeto={projeto} />
+              <Grid key={projeto.id} item xs={6} sm={6} md={4} lg={3}>
+                <CardComponent projeto={projeto} />
               </Grid>
             ))}
       </Grid>

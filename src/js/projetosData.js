@@ -32,6 +32,40 @@ const Projetos = [
         color: 'success'
       }
     ]
+},
+{
+  title: 'Wallet',
+  subtitle: 'Virtual Wallet with Java EE',
+  img: 'assets/wallet.png',
+  link:  '',
+  git: 'https://github.com/gustavobardavid/CarteiraVirtualComJava/',
+  tecnologies: [
+    {
+      name: 'Java',
+      color: 'secondary'
+  },
+    {
+      name: 'Tomcat',
+      color: 'error'
+    }
+  ]
+},
+{
+  title: 'Fidelius',
+  subtitle: 'Pharmaceutical Semiology System',
+  img: 'assets/Fidelius.png',
+  link:  '',
+  git: 'https://github.com/gustavobardavid/Fidelius/',
+  tecnologies: [
+    {
+      name: 'Java',
+      color: 'secondary'
+  },
+    {
+      name: 'Tomcat',
+      color: 'error'
+    }
+  ]
 }
   ]
 export default Projetos;
