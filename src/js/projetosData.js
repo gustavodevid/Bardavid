@@ -45,7 +45,7 @@ const Projetos = [
       color: 'secondary'
   },
     {
-      name: 'Tomcat',
+      name: 'VRAPTOR4',
       color: 'error'
     }
   ]
@@ -62,8 +62,25 @@ const Projetos = [
       color: 'secondary'
   },
     {
-      name: 'Tomcat',
+      name: 'JSP',
       color: 'error'
+    }
+  ]
+},
+{
+  title: 'Harmony',
+  subtitle: '',
+  img: 'assets/harmony.png',
+  link:  'https://melodix.vercel.app',
+  git: 'https://github.com/gustavobardavid/Melodix/',
+  tecnologies: [
+    {
+      name: 'React',
+      color: 'primary'
+  },
+    {
+      name: 'Vite',
+      color: 'success'
     }
   ]
 }

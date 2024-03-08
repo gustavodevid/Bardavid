@@ -87,7 +87,7 @@ const FotoProfile = ({foto}) => {
 </div>
 <div className='profile-text'>    
 <h1>A Software Engineer, Future Professor and Researcher</h1>
-            <h2>Read <a href="#">more</a> about me</h2>
+            <h2>I'm a student and living in Brazil</h2>
 </div>
         </>
     );

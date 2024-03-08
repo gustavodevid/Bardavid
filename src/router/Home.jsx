@@ -13,7 +13,6 @@ import { Grid } from '@mui/material'
 import FotoProfile from '../components/FotoProfile.jsx'
 import CardComponent from '../components/CardComponent.jsx';
 import ProjetosData from '../js/projetosData.js';
-import Projetos from '../js/projetosData.js'
 
 function Home() {
     return (
@@ -34,7 +33,7 @@ function Home() {
           justifyContent: 'center'
         }}>
             {ProjetosData.map(projeto => (
-              <Grid key={projeto.id} item xs={6} sm={6} md={4} lg={3}>
+              <Grid key={projeto.id} item xs={6} sm={6} md={4} lg={2}>
                 <CardComponent projeto={projeto} />
               </Grid>
             ))}
