@@ -13,7 +13,7 @@ const CardComponent = ({ projeto }) => {
     }}>
       <CardMedia
         component="img"
-        style={{ objectPosition: 'center top', height: 'auto', width: '100%', objectFit: 'cover' }}
+        style={{ objectPosition:'center top', height: 'auto', width: '100%', objectFit: 'cover' }}
         image={projeto.img}
         alt="Image"
       />
