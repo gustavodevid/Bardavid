@@ -35,7 +35,7 @@ function Home() {
           justifyContent: 'center'
         }}>
             {ProjetosData.map(projeto => (
-              <Grid key={projeto.id} item xs={6} sm={6} md={4} lg={2}>
+              <Grid key={projeto.id} item xs={6} sm={6} md={4} lg={3}>
                 <CardComponent projeto={projeto} />
               </Grid>
             ))}

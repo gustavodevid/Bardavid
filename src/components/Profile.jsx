@@ -19,7 +19,7 @@ const Profile = () => {
           {introText.split('').map((char, index) => (
             <motion.span
               key={index}
-              style={{ display: 'inline-block', marginRight: '1px' }}
+              style={{ display: 'inline-block', marginRight: '3px' }}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5 + index * 0.05, duration: 0.5 }}
