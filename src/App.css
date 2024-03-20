@@ -456,3 +456,39 @@ menu li {
   width: 100%;
   height: 100vh;
 }
+
+.tech-icons {
+  font-size: 3.5em !important;
+  margin: 15px !important;
+  padding: 10px !important;
+  opacity: 0.93 !important;
+  border: 1.7px solid var(--primary) !important;
+  vertical-align: middle !important;
+  text-align: center !important;
+  border-radius: 5px !important;
+  display: table !important;
+  box-shadow: 4px 5px 4px 3px var(--primary) !important;
+  overflow: hidden !important;
+  transition: all 0.4s ease 0s !important;
+  background-color: var(--secondary);
+}
+
+@media (max-width: 767px) {
+  .tech-icons {
+    margin: 10px !important;
+  }
+}
+
+.tech-icons:hover {
+  transform: scale(1.05) !important;
+  overflow: hidden !important;
+  border: 2.2px solid rgba(197, 115, 230, 0.883) !important;
+}
+
+.tech-stack-container {
+  display: grid;
+  margin: 100px;
+  grid-template-columns: repeat(4,1fr);
+  flex-wrap: wrap;
+  justify-content: center;
+}

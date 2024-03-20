@@ -13,6 +13,8 @@ import { Grid } from '@mui/material'
 import FotoProfile from '../components/FotoProfile.jsx'
 import CardComponent from '../components/CardComponent.jsx';
 import ProjetosData from '../js/projetosData.js';
+import Techstack from '../components/Techstack'
+import React from 'react'
 
 function Home() {
     return (
@@ -38,11 +40,12 @@ function Home() {
               </Grid>
             ))}
       </Grid>
+      <Techstack />
+      <Proposta />
       <a href="https://github.com/gustavobardavid" target='blank'>
         <h1>Veja todos os projetos no GitHub <span className="fab fa-github"></span></h1>
       </a>
-      <Proposta />
-          <Cabecalho />
+      <Cabecalho />
       <footer>
       <Footer/>
       </footer>
