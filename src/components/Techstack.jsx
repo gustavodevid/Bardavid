@@ -29,7 +29,7 @@ import { TbBrandGolang } from "react-icons/tb";
 function Techstack() {
   return (
     <>
-      <h2>Tecnologias que eu uso</h2>
+      <h2>Professional Skillset</h2>
     <div className="tech-stack-container">
       <Col xs={4} md={2} className="tech-icons">
         <CgCPlusPlus />
