@@ -7,6 +7,8 @@
   --fonte: Poppins;
   line-height: 1.5;
   font-weight: 400;
+  max-width: 1280px;
+  margin: 0 auto;
   
   --primary: #F2E7C9;
   --secondary: #413C58;
@@ -17,6 +19,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 ::-webkit-scrollbar {
   width: 10px; 
 }
@@ -54,7 +57,8 @@ body {
 }
 
 h1 {
-  margin: 0px 550px;
+  margin: 0px 50px;
+  margin-bottom: 100px;
   text-align: center;
   border-left: 5px solid #ffffff;
   background: linear-gradient(to left, var(--secondary), var(--secondary));
@@ -71,6 +75,7 @@ h2 {
   opacity: 0.8;
   font-weight: 600;
 }
+
 
 aside {
   position: relative;
@@ -273,6 +278,10 @@ menu li {
   background-color: var(--secondary);
 }
 
+.projetos {
+  margin-bottom: 50px;
+}
+
 @media screen and (max-width: 600px) {
   h1 {
       width: 100%;
@@ -326,7 +335,7 @@ menu li {
 
 .logos {
   width: 100%;
-  margin: 0px 0px;
+  margin: 10px 10px;
   background-size: cover;
   background-position: center;
   padding: 20px;

@@ -14,7 +14,6 @@ import FotoProfile from '../components/FotoProfile.jsx'
 import CardComponent from '../components/CardComponent.jsx';
 import ProjetosData from '../js/projetosData.js';
 import Techstack from '../components/Techstack'
-import React from 'react'
 
 function Home() {
     return (
@@ -28,7 +27,7 @@ function Home() {
           <FotoProfile foto = './assets/eu2.jpg' />
        </aside>
       <Habilidades/>
-          <Logos logosData={logosData}/>  
+      <h2>Some of My Projects</h2>
       <Grid className='projetos' container spacing={1}   
         sx={{
           alignItems: 'center',
@@ -40,11 +39,12 @@ function Home() {
               </Grid>
             ))}
       </Grid>
-      <Techstack />
-      <Proposta />
       <a href="https://github.com/gustavobardavid" target='blank'>
-        <h1>Veja todos os projetos no GitHub <span className="fab fa-github"></span></h1>
+        <h1>See All My Projects On GitHub   <span className="fab fa-github"></span></h1>
       </a>
+      <Techstack />
+        <Logos logosData={logosData}/>  
+      <Proposta />
       <Cabecalho />
       <footer>
       <Footer/>

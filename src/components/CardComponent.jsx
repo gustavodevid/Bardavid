@@ -5,7 +5,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 
 const CardComponent = ({ projeto }) => {
   return (
-    <Card sx={{ maxWidth: 400, 
+    <Card className='projeto' sx={{ maxWidth: 400, 
     backgroundColor: 'var(--primary)', 
     color: 'var(--secondary)',
     borderRadius: '5px',  
@@ -24,8 +24,8 @@ const CardComponent = ({ projeto }) => {
         <Typography sx={{margin:1}} variant="body2" fontFamily={'var(--fonte)'}>
           {projeto.subtitle}
         </Typography>
-        <Button sx={{margin:1}} endIcon={<ArrowForwardIcon />} variant="outlined" href={projeto.link} target='blank'>
-          Ver mais
+        <Button sx={{margin:1, backgroundColor:'var(--secondary)', color:'var(--primary)'}} endIcon={<ArrowForwardIcon />} variant="contained" href={projeto.link} target='blank'>
+          See More
         </Button>
         <IconButton aria-label="github" href={projeto.git} target='blank'>
           <GitHubIcon />

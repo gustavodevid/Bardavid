@@ -11,8 +11,12 @@ const Projetos = [
           color: 'primary'
       },
         {
-          name: 'Vite',
+          name: 'Node.js',
           color: 'success'
+        },
+        {
+          name: 'Express',
+          color: 'error'
         }
       ]
     },
@@ -30,6 +34,10 @@ const Projetos = [
       {
         name: 'Vite',
         color: 'success'
+      },
+      {
+        name: 'Axios',
+        color: 'error'
       }
     ]
 },
@@ -42,11 +50,15 @@ const Projetos = [
   tecnologies: [
     {
       name: 'Java',
-      color: 'secondary'
+      color: 'primary'
   },
     {
-      name: 'VRAPTOR4',
+      name: 'Vraptor4',
       color: 'error'
+    },
+    {
+      name: 'JSP',
+      color: 'secondary'
     }
   ]
 },
@@ -64,6 +76,10 @@ const Projetos = [
     {
       name: 'JSP',
       color: 'error'
+    },
+    {
+      name: 'Hibernate',
+      color: 'primary'
     }
   ]
 },
