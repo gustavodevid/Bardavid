@@ -66,7 +66,7 @@ const Projetos = [
   title: 'Fidelius',
   subtitle: 'Pharmaceutical Semiology System',
   img: 'assets/Fidelius.png',
-  link:  '',
+  link:  'https://fidelius.vercel.app/',
   git: 'https://github.com/gustavobardavid/Fidelius/',
   tecnologies: [
     {
