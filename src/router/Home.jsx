@@ -15,7 +15,7 @@ import CardComponent from '../components/CardComponent.jsx';
 import ProjetosData from '../js/projetosData.js';
 import Techstack from '../components/Techstack'
 import Gow from '../components/GowDB.tsx'
-import Interstellar from '../components/Interstellar.tsx'
+import Fidelius from '../components/Fidelius.tsx'
 
 function Home() {
     return (
@@ -30,7 +30,7 @@ function Home() {
        </aside>
       <Habilidades/>
       <Gow />
-      <Interstellar />
+      <Fidelius />
       <h2>Some of My Projects</h2>
       <Grid className='projetos' container spacing={1}   
         sx={{

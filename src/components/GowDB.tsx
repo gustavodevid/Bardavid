@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { alpha } from '@mui/material';
+import { IconButton, alpha } from '@mui/material';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
@@ -8,6 +8,7 @@ import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import { Link } from 'react-router-dom';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 export default function GowDB() {
   return (
@@ -55,6 +56,12 @@ export default function GowDB() {
               </Typography>
             <Typography variant="body2" textAlign="center" color='var(--secondary)' style={{ fontFamily: 'Poppins' }}>
                 Rest API of GOW Universe. 
+                <Button sx={{margin:1, backgroundColor:'var(--secondary)', color:'var(--primary)'}} endIcon={<ArrowForwardIcon />} variant="contained" href="https://gowdb.vercel.app" target='blank'>
+                  See More
+              </Button>
+                <IconButton aria-label="github" href="https://github.com/gustavobardavid/gow-db/" target='blank'>
+                  <GitHubIcon />
+                </IconButton>
             </Typography>
             <Stack
               direction={{ xs: 'column', sm: 'row' }}

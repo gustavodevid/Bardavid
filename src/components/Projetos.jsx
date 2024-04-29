@@ -11,7 +11,7 @@ const Projetos = () => {
     }}>
         {ProjetosData.map(projeto => (
           <Grid key={projeto.id} item xs={12} sm={6} md={4} lg={3}>
-          <CardComponent projeto={projeto} />
+            <CardComponent projeto={projeto} />
           </Grid>
         ))}
   </Grid>

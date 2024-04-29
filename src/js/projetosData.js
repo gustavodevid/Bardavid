@@ -1,22 +1,18 @@
 const Projetos = [
     {
-      title: 'Gow DB',
-      subtitle: 'Uma Database do Universo de God of War',
-      img: 'assets/gowdb.png',
-      link:  'https://gowdb.vercel.app',
-      git: 'https://github.com/gustavobardavid/gow-db/',
+      title: 'Dzn Games ',
+      subtitle: 'An online games store with Html and Css',
+      img: 'assets/games.png',
+      link:  'https://gustavobardavid.github.io/site-de-ecommerce/',
+      git: 'https://github.com/gustavobardavid/site-de-ecommerce',
       tecnologies: [
         {
-          name: 'TypeScript',
+          name: 'CSS',
           color: 'primary'
       },
         {
-          name: 'Node.js',
+          name: 'HTML',
           color: 'success'
-        },
-        {
-          name: 'Express',
-          color: 'error'
         }
       ]
     },
@@ -63,22 +59,22 @@ const Projetos = [
   ]
 },
 {
-  title: 'Fidelius',
-  subtitle: 'Pharmaceutical Semiology System',
-  img: 'assets/Fidelius.png',
-  link:  'https://fidelius.vercel.app/',
-  git: 'https://github.com/gustavobardavid/Fidelius/',
+  title: 'IFPB Portal',
+  subtitle: 'Redesign of the IFPB Student Portal',
+  img: 'assets/portalifpb.png',
+  link:  'https://altamira-gcm.github.io/Projeto-Final-GCM/paginaprincipal.html',
+  git: 'https://github.com/gustavobardavid/Projeto-Final-GCM',
   tecnologies: [
     {
-      name: 'Java',
+      name: 'HTML',
       color: 'secondary'
   },
     {
-      name: 'JSP',
+      name: 'Git',
       color: 'error'
     },
     {
-      name: 'Hibernate',
+      name: 'CSS',
       color: 'primary'
     }
   ]
@@ -96,6 +92,23 @@ const Projetos = [
   },
     {
       name: 'Vite',
+      color: 'success'
+    }
+  ]
+},
+{
+  title: 'Mundo Game',
+  subtitle: 'A Game Review Website',
+  img: 'assets/review.png',
+  link:  'https://gustavobardavid.github.io/mundo-game/',
+  git: 'https://github.com/gustavobardavid/mundo-game',
+  tecnologies: [
+    {
+      name: 'CSS',
+      color: 'primary'
+  },
+    {
+      name: 'HTML',
       color: 'success'
     }
   ]
