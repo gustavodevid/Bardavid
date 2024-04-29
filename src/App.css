@@ -497,3 +497,28 @@ menu li {
   flex-wrap: wrap;
   justify-content: center;
 }
+.content {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.gow-background {
+  background: url(../public/assets/gowdb.png);
+  background-size: cover;
+  width: 100%;
+  height:60vh; 
+  border-radius: 20px;
+  background-position: center;
+  background-position: 60% center; 
+}
+
+.inter-background {
+  background: url(../public/assets/interstellar.png);
+  background-size: cover;
+  width: 100%;
+  height:60vh; 
+  border-radius: 20px;
+  background-position: center;
+  background-position: 60% center; 
+}

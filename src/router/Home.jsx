@@ -14,6 +14,8 @@ import FotoProfile from '../components/FotoProfile.jsx'
 import CardComponent from '../components/CardComponent.jsx';
 import ProjetosData from '../js/projetosData.js';
 import Techstack from '../components/Techstack'
+import Gow from '../components/GowDB.tsx'
+import Interstellar from '../components/Interstellar.tsx'
 
 function Home() {
     return (
@@ -27,6 +29,8 @@ function Home() {
           <FotoProfile foto = './assets/eu2.jpg' />
        </aside>
       <Habilidades/>
+      <Gow />
+      <Interstellar />
       <h2>Some of My Projects</h2>
       <Grid className='projetos' container spacing={1}   
         sx={{
