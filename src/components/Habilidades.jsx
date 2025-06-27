@@ -2,17 +2,17 @@ const skills = [
     {
         icon: 'card-icon fas fa-desktop',
         title: 'Desenvolvimento Web',
-        subtitle: 'Experiência no desenvolvimento de aplicações web front-end e back-end. Conhecimento em Spring, HTML, CSS e JavaScript, assim como em frameworks populares como React, Angular ou Vite.js.'
+        subtitle: 'Experiência no desenvolvimento de aplicações web front-end e back-end. '
     },
     {
         icon: 'card-icon fas fa-mobile',
         title: 'Desenvolvimento Mobile',
-        subtitle: 'Prototipagem de layouts mobile com ênfase no Touch-friendly e usabilidade. Foco na experiência eficaz entre negócio e cliente.'
+        subtitle: 'Touch-friendly e usabilidade. Foco na experiência.'
     },
     {
         icon: 'card-icon fas fa-database',
         title: 'Projeção e implementação de Bancos de Dados',
-        subtitle: 'Habilidade em projetar e gerenciar bancos de dados relacionais (SQL) e não relacionais (NoSQL). Competência em consultas eficientes, otimização de desempenho e modelagem de dados.'
+        subtitle: 'Habilidade em projetar e gerenciar bancos de dados relacionais (SQL) e não relacionais (NoSQL).'
     }
 ]
     const Habilidades = ()=>{

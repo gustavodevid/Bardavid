@@ -16,6 +16,7 @@ import ProjetosData from '../js/projetosData.js';
 import Techstack from '../components/Techstack'
 import Gow from '../components/GowDB.tsx'
 import Fidelius from '../components/Fidelius.tsx'
+import Walkme from '../components/Walkmefront.tsx'
 
 function Home() {
     return (
@@ -30,6 +31,7 @@ function Home() {
        </aside>
       <Habilidades/>
       <Gow />
+      <Walkme />
       <Fidelius />
       <h2>Some of My Projects</h2>
       <Grid className='projetos' container spacing={1}   

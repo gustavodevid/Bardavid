@@ -17,23 +17,6 @@ const Projetos = [
     ]
   },
   {
-    title: 'API Walk.me',
-    subtitle: 'An online games store with Html and Css',
-    img: 'assets/walk.png',
-    link:  'https://gustavobardavid.github.io/site-de-ecommerce/',
-    git: 'https://github.com/gustavobardavid/site-de-ecommerce',
-    tecnologies: [
-      {
-        name: 'CSS',
-        color: 'primary'
-    },
-      {
-        name: 'HTML',
-        color: 'success'
-      }
-    ]
-  },
-  {
     title: 'Interstellar',
     subtitle: 'Image gallery of Nasa Images',
     img: 'assets/interstellar.png',
