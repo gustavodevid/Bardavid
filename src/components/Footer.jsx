@@ -4,7 +4,7 @@ const Footer = () => {
     <div className="footer-top-wrapper">
         <section>
             <menu>
-                <h2>Copyright © 2022 - 2024. Gustavo Bardavid</h2>
+                <h2>Copyright © 2022 - 2025. Gustavo Bardavid</h2>
                 <li>
                     <a></a>
                 </li>
@@ -12,7 +12,7 @@ const Footer = () => {
         </section>
         <section>
             <menu>
-                <h2>Check out the <a href="http://">source code</a>. Current version 1.1</h2>
+                <h2>Check out the <a href="https://github.com/gustavodevid/Bardavid">source code</a>. Current version 1.1</h2>
                 <li>     
                 </li>
             </menu>

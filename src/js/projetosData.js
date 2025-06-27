@@ -1,21 +1,38 @@
 const Projetos = [
-    {
-      title: 'Dzn Games ',
-      subtitle: 'An online games store with Html and Css',
-      img: 'assets/games.png',
-      link:  'https://gustavobardavid.github.io/site-de-ecommerce/',
-      git: 'https://github.com/gustavobardavid/site-de-ecommerce',
-      tecnologies: [
-        {
-          name: 'CSS',
-          color: 'primary'
-      },
-        {
-          name: 'HTML',
-          color: 'success'
-        }
-      ]
+  {
+    title: 'Dzn Games ',
+    subtitle: 'An online games store with Html and Css',
+    img: 'assets/games.png',
+    link:  'https://gustavobardavid.github.io/site-de-ecommerce/',
+    git: 'https://github.com/gustavobardavid/site-de-ecommerce',
+    tecnologies: [
+      {
+        name: 'CSS',
+        color: 'primary'
     },
+      {
+        name: 'HTML',
+        color: 'success'
+      }
+    ]
+  },
+  {
+    title: 'API Walk.me',
+    subtitle: 'An online games store with Html and Css',
+    img: 'assets/walk.png',
+    link:  'https://gustavobardavid.github.io/site-de-ecommerce/',
+    git: 'https://github.com/gustavobardavid/site-de-ecommerce',
+    tecnologies: [
+      {
+        name: 'CSS',
+        color: 'primary'
+    },
+      {
+        name: 'HTML',
+        color: 'success'
+      }
+    ]
+  },
   {
     title: 'Interstellar',
     subtitle: 'Image gallery of Nasa Images',
@@ -112,6 +129,6 @@ const Projetos = [
       color: 'success'
     }
   ]
-}
+},
   ]
 export default Projetos;
