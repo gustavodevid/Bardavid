@@ -31,7 +31,6 @@ function Home() {
        </aside>
       <Habilidades/>
       <Gow />
-      <Walkme />
       <Fidelius />
       <h2>Some of My Projects</h2>
       <Grid className='projetos' container spacing={1}   
