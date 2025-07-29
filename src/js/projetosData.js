@@ -83,7 +83,7 @@ const Projetos = [
   title: 'Harmony',
   subtitle: '',
   img: 'assets/harmony.png',
-  link:  'https://melodix.vercel.app',
+  link:  'https://harmonym.vercel.app/',
   git: 'https://github.com/gustavobardavid/Melodix/',
   tecnologies: [
     {
