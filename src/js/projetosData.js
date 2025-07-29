@@ -84,7 +84,7 @@ const Projetos = [
   subtitle: '',
   img: 'assets/harmony.png',
   link:  'https://harmonym.vercel.app/',
-  git: 'https://github.com/gustavobardavid/Melodix/',
+  git: 'https://github.com/gustavodevid/Melodix/',
   tecnologies: [
     {
       name: 'React',
