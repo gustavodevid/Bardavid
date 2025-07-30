@@ -54,7 +54,7 @@ function Home() {
       <Techstack />
         <Logos logosData={logosData}/>  
       <Proposta />
-      <FeedbackSection />
+      {/* <FeedbackSection /> */}
       
       <footer>
       <Footer/>

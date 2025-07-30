@@ -6,22 +6,78 @@
   --fonte: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --font-secondary: "Inter", sans-serif;
 
-  /* Enhanced color palette */
-  --primary: #f2e7c9;
-  --secondary: #413c58;
-  --terciary: #ebddc3;
-  --quaternary: #f18324;
-  --accent: #e67e22;
-  --text-dark: #2c3e50;
-  --text-light: #7f8c8d;
+  /* Enhanced modern color palette */
+  --primary: #f8fafc;
+  --secondary: #1e293b;
+  --terciary: #f1f5f9;
+  --quaternary: #3b82f6;
+  --accent: #8b5cf6;
+  --success: #10b981;
+  --warning: #f59e0b;
+  --danger: #ef4444;
+
+  /* Extended color system */
+  --slate-50: #f8fafc;
+  --slate-100: #f1f5f9;
+  --slate-200: #e2e8f0;
+  --slate-300: #cbd5e1;
+  --slate-400: #94a3b8;
+  --slate-500: #64748b;
+  --slate-600: #475569;
+  --slate-700: #334155;
+  --slate-800: #1e293b;
+  --slate-900: #0f172a;
+
+  --blue-50: #eff6ff;
+  --blue-500: #3b82f6;
+  --blue-600: #2563eb;
+  --blue-700: #1d4ed8;
+
+  --purple-50: #faf5ff;
+  --purple-500: #8b5cf6;
+  --purple-600: #7c3aed;
+  --purple-700: #6d28d9;
+
+  --emerald-50: #ecfdf5;
+  --emerald-500: #10b981;
+  --emerald-600: #059669;
+
+  --amber-50: #fffbeb;
+  --amber-500: #f59e0b;
+  --amber-600: #d97706;
+
+  /* Semantic colors */
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #64748b;
+  --text-light: #94a3b8;
   --white: #ffffff;
   --black: #000000;
 
-  /* Modern design tokens */
-  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
-  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.05);
-  --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.15), 0 10px 10px rgba(0, 0, 0, 0.04);
+  /* Background variations */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8fafc;
+  --bg-tertiary: #f1f5f9;
+  --bg-dark: #0f172a;
+  --bg-card: #ffffff;
+
+  /* Modern gradients */
+  --gradient-primary: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  --gradient-secondary: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  --gradient-accent: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+  --gradient-success: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  --gradient-warm: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  --gradient-hero: linear-gradient(135deg, #eff6ff 0%, #dbeafe 50%, #f0f9ff 100%);
+  --gradient-card: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+
+  /* Enhanced shadows with modern colors */
+  --shadow-sm: 0 1px 2px 0 rgba(15, 23, 42, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(15, 23, 42, 0.1), 0 2px 4px -1px rgba(15, 23, 42, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(15, 23, 42, 0.1), 0 4px 6px -2px rgba(15, 23, 42, 0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(15, 23, 42, 0.1), 0 10px 10px -5px rgba(15, 23, 42, 0.04);
+  --shadow-2xl: 0 25px 50px -12px rgba(15, 23, 42, 0.25);
+  --shadow-colored: 0 10px 15px -3px rgba(59, 130, 246, 0.1), 0 4px 6px -2px rgba(59, 130, 246, 0.05);
+  --shadow-purple: 0 10px 15px -3px rgba(139, 92, 246, 0.1), 0 4px 6px -2px rgba(139, 92, 246, 0.05);
 
   --radius-sm: 6px;
   --radius-md: 8px;
@@ -100,7 +156,7 @@ body {
   font-weight: 400;
   margin: 0;
   color: var(--white);
-  background: linear-gradient(135deg, var(--primary) 0%, var(--terciary) 50%, var(--primary) 100%);
+  background: var(--gradient-hero);
   background-attachment: fixed;
   min-height: 100vh;
 }
@@ -110,12 +166,12 @@ h1 {
   margin: 0 clamp(20px, 5vw, 50px);
   margin-bottom: clamp(50px, 10vw, 100px);
   text-align: center;
-  border-left: 4px solid var(--quaternary);
-  background: linear-gradient(135deg, var(--secondary) 0%, #2c3e50 100%);
+  border-left: 4px solid var(--blue-500);
+  background: var(--gradient-secondary);
   padding: clamp(20px, 4vw, 30px);
-  color: var(--primary);
+  color: var(--slate-50);
   border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-lg);
+  box-shadow: var(--shadow-xl);
   font-size: clamp(1.5rem, 4vw, 2.5rem);
   font-weight: 700;
   transition: var(--transition-normal);
@@ -130,7 +186,7 @@ h1::before {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(45deg, transparent 30%, rgba(255, 255, 255, 0.1) 50%, transparent 70%);
+  background: linear-gradient(45deg, transparent 30%, rgba(59, 130, 246, 0.1) 50%, transparent 70%);
   transform: translateX(-100%);
   transition: transform 0.6s ease;
 }
@@ -147,7 +203,7 @@ h1:hover {
 h2 {
   text-align: center;
   margin: clamp(20px, 4vw, 25px);
-  color: var(--secondary);
+  color: var(--slate-700);
   font-size: clamp(1.2rem, 3vw, 1.5rem);
   opacity: 0.9;
   font-weight: 600;
@@ -163,7 +219,7 @@ aside {
   justify-content: center;
   align-items: center;
   padding: clamp(50px, 10vw, 100px) 20px;
-  background: radial-gradient(circle at center, rgba(242, 231, 201, 0.1) 0%, transparent 70%);
+  background: radial-gradient(circle at center, rgba(59, 130, 246, 0.05) 0%, transparent 70%);
 }
 
 aside h1 {
@@ -173,14 +229,14 @@ aside h1 {
   background: transparent;
   padding: 20px 0;
   opacity: 0.9;
-  color: var(--secondary);
+  color: var(--slate-800);
   box-shadow: none;
   font-size: clamp(2rem, 5vw, 3.5rem);
 }
 
 aside h2 {
   text-align: left;
-  color: var(--secondary);
+  color: var(--slate-700);
   margin: 0;
   opacity: 0.8;
   font-size: clamp(1rem, 2.5vw, 1.25rem);
@@ -197,15 +253,15 @@ aside h2 {
   align-items: center;
   text-align: center;
   padding: 20px;
-  background: radial-gradient(ellipse at center, rgba(65, 60, 88, 0.05) 0%, transparent 70%);
+  background: radial-gradient(ellipse at center, rgba(139, 92, 246, 0.05) 0%, transparent 70%);
 }
 
 .hello h3 {
   font-size: clamp(2.5rem, 8vw, 4.5rem);
   font-weight: 900;
   opacity: 0.9;
-  color: var(--secondary);
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  color: var(--slate-800);
+  text-shadow: 2px 2px 4px rgba(59, 130, 246, 0.1);
   margin-bottom: 20px;
   animation: fadeInUp 1s ease-out;
 }
@@ -228,37 +284,37 @@ aside h2 {
 /* Enhanced links */
 a {
   text-decoration: none;
-  color: var(--secondary);
+  color: var(--slate-700);
   transition: var(--transition-fast);
   position: relative;
 }
 
 a:hover {
-  color: var(--quaternary);
+  color: var(--blue-600);
   transform: translateY(-1px);
 }
 
 aside a {
   text-decoration: underline;
-  color: var(--secondary);
+  color: var(--slate-700);
   font-weight: 600;
-  text-decoration-color: var(--quaternary);
+  text-decoration-color: var(--blue-500);
   text-underline-offset: 4px;
 }
 
 aside a:hover {
-  text-decoration-color: var(--accent);
+  text-decoration-color: var(--purple-500);
 }
 
 /* Modern footer */
 footer {
-  color: var(--white);
+  color: var(--slate-100);
   overflow: hidden;
   display: flex;
   flex-direction: column;
   width: 100%;
   margin-top: 80px;
-  background: linear-gradient(135deg, var(--secondary) 0%, #2c3e50 100%);
+  background: var(--gradient-secondary);
   border-radius: var(--radius-2xl) var(--radius-2xl) 0 0;
   box-shadow: var(--shadow-xl);
 }
@@ -316,8 +372,8 @@ menu a:hover {
 
 .portfolio-item {
   text-align: center;
-  color: var(--secondary);
-  background: var(--white);
+  color: var(--slate-700);
+  background: var(--bg-card);
   border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: var(--shadow-md);
@@ -327,7 +383,7 @@ menu a:hover {
 
 .portfolio-item:hover {
   transform: translateY(-8px);
-  box-shadow: var(--shadow-xl);
+  box-shadow: var(--shadow-colored);
 }
 
 .portfolio-item img {
@@ -344,7 +400,7 @@ menu a:hover {
 .portfolio-item h3 {
   margin: 20px 0;
   padding: 0 20px;
-  color: var(--secondary);
+  color: var(--slate-800);
   font-weight: 600;
 }
 
@@ -380,15 +436,15 @@ menu a:hover {
 .cert-item {
   flex: 0 0 320px;
   margin-right: 20px;
-  border: 1px solid rgba(65, 60, 88, 0.2);
-  background: linear-gradient(135deg, var(--secondary) 0%, #2c3e50 100%);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  background: var(--gradient-accent);
   border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: var(--shadow-md);
   transition: var(--transition-normal);
   padding: 2rem;
   text-align: center;
-  color: var(--white);
+  color: var(--slate-50);
   scroll-snap-align: start;
   position: relative;
 }
@@ -416,7 +472,7 @@ menu a:hover {
 
 /* Enhanced buttons */
 .next-button {
-  background: linear-gradient(135deg, var(--secondary), var(--quaternary));
+  background: var(--gradient-accent);
   color: var(--white);
   border: none;
   padding: 12px 24px;
@@ -431,9 +487,9 @@ menu a:hover {
 }
 
 .next-button:hover {
-  background: linear-gradient(135deg, var(--quaternary), var(--accent));
+  background: var(--gradient-success);
   transform: translateY(-2px);
-  box-shadow: var(--shadow-md);
+  box-shadow: var(--shadow-purple);
 }
 
 .next-button:active {
@@ -448,11 +504,11 @@ menu a:hover {
 .logos {
   width: 100%;
   margin: 40px auto;
-  background: var(--white);
+  background: var(--bg-card);
   background-size: cover;
   background-position: center;
   padding: 60px 40px;
-  color: var(--text-dark);
+  color: var(--slate-800);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-lg);
   position: relative;
@@ -466,7 +522,7 @@ menu a:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(45deg, transparent 30%, rgba(241, 131, 36, 0.05) 50%, transparent 70%);
+  background: linear-gradient(45deg, transparent 30%, rgba(139, 92, 246, 0.03) 50%, transparent 70%);
   pointer-events: none;
 }
 
@@ -545,8 +601,8 @@ menu a:hover {
 }
 
 .card-content {
-  background: var(--white);
-  border: 1px solid rgba(0, 0, 0, 0.08);
+  background: var(--bg-card);
+  border: 1px solid var(--slate-200);
   min-height: 350px;
   text-align: left;
   border-radius: var(--radius-lg);
@@ -564,7 +620,7 @@ menu a:hover {
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(90deg, var(--quaternary), var(--accent));
+  background: linear-gradient(90deg, var(--blue-500), var(--purple-500));
   transform: scaleX(0);
   transition: transform var(--transition-normal);
 }
@@ -574,17 +630,17 @@ menu a:hover {
 }
 
 .card-content:hover {
-  background: linear-gradient(135deg, var(--secondary) 0%, #2c3e50 100%);
-  box-shadow: var(--shadow-xl);
+  background: var(--gradient-accent);
+  box-shadow: var(--shadow-colored);
   transform: translateY(-8px);
 }
 
 .card-content:hover * {
-  color: var(--white);
+  color: var(--slate-100);
 }
 
 .card-icon {
-  color: var(--quaternary);
+  color: var(--blue-600);
   font-size: 3rem;
   margin-bottom: 1.5rem;
   transition: var(--transition-normal);
@@ -596,7 +652,7 @@ menu a:hover {
 }
 
 .card-title {
-  color: var(--secondary);
+  color: var(--slate-800);
   margin-bottom: 1rem;
   text-align: left;
   font-size: 1.25rem;
@@ -605,19 +661,19 @@ menu a:hover {
 }
 
 .card-text {
-  color: var(--text-light);
+  color: var(--slate-600);
   line-height: 1.6;
   font-size: 15px;
 }
 
 /* Enhanced proposta section */
 .proposta {
-  background: linear-gradient(135deg, var(--primary) 0%, var(--terciary) 100%);
+  background: var(--gradient-hero);
   padding: clamp(60px, 10vw, 100px) clamp(20px, 5vw, 40px);
   margin: 50px 20px;
   border-radius: var(--radius-xl);
   text-align: center;
-  box-shadow: var(--shadow-lg);
+  box-shadow: var(--shadow-xl);
   position: relative;
   overflow: hidden;
 }
@@ -629,7 +685,7 @@ menu a:hover {
   left: -50%;
   width: 200%;
   height: 200%;
-  background: radial-gradient(circle, rgba(241, 131, 36, 0.1) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.08) 0%, transparent 70%);
   animation: rotate 20s linear infinite;
 }
 
@@ -643,7 +699,7 @@ menu a:hover {
 }
 
 .proposta h2 {
-  color: var(--secondary);
+  color: var(--slate-800);
   font-weight: 800;
   margin-bottom: 30px;
   position: relative;
@@ -651,7 +707,7 @@ menu a:hover {
 }
 
 .proposta button {
-  background: linear-gradient(135deg, var(--secondary) 0%, var(--quaternary) 100%);
+  background: var(--gradient-accent);
   color: var(--white);
   padding: 16px 32px;
   border: none;
@@ -671,9 +727,9 @@ menu a:hover {
 }
 
 .proposta button:hover {
-  background: linear-gradient(135deg, var(--quaternary) 0%, var(--accent) 100%);
+  background: var(--gradient-success);
   transform: translateY(-3px);
-  box-shadow: var(--shadow-lg);
+  box-shadow: var(--shadow-purple);
 }
 
 /* Enhanced tech icons */
@@ -682,7 +738,7 @@ menu a:hover {
   margin: 15px !important;
   padding: 20px !important;
   opacity: 0.95 !important;
-  border: 2px solid var(--primary) !important;
+  border: 2px solid var(--blue-200) !important;
   vertical-align: middle !important;
   text-align: center !important;
   border-radius: var(--radius-lg) !important;
@@ -692,8 +748,8 @@ menu a:hover {
   box-shadow: var(--shadow-md) !important;
   overflow: hidden !important;
   transition: var(--transition-normal) !important;
-  background: linear-gradient(135deg, var(--secondary) 0%, #2c3e50 100%) !important;
-  color: var(--primary) !important;
+  background: var(--gradient-accent) !important;
+  color: var(--slate-50) !important;
   width: 80px !important;
   height: 80px !important;
   position: relative !important;
@@ -706,7 +762,7 @@ menu a:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(45deg, transparent 30%, rgba(255, 255, 255, 0.1) 50%, transparent 70%);
+  background: linear-gradient(45deg, transparent 30%, rgba(255, 255, 255, 0.15) 50%, transparent 70%);
   transform: translateX(-100%);
   transition: transform 0.6s ease;
 }
@@ -718,9 +774,9 @@ menu a:hover {
 .tech-icons:hover {
   transform: scale(1.1) !important;
   overflow: hidden !important;
-  border: 2px solid var(--quaternary) !important;
-  background: linear-gradient(135deg, var(--quaternary) 0%, var(--accent) 100%) !important;
-  box-shadow: var(--shadow-xl) !important;
+  border: 2px solid var(--purple-400) !important;
+  background: var(--gradient-success) !important;
+  box-shadow: var(--shadow-colored) !important;
 }
 
 .tech-stack-container {
