@@ -13,14 +13,16 @@ import { Grid } from '@mui/material'
 import FotoProfile from '../components/FotoProfile.jsx'
 import CardComponent from '../components/CardComponent.jsx';
 import ProjetosData from '../js/projetosData.js';
+import ProjetosMobile from '../js/ProjetosMobile.js';
 import Techstack from '../components/Techstack'
 import Gow from '../components/GowDB.tsx'
 import Fidelius from '../components/Fidelius.tsx'
-import Walkme from '../components/Walkmefront.tsx'
+import Walkme from '../components/Walkme.tsx'
 import { ResumeDownload } from '../components/ResumeDownload.jsx'
 import { Testimonials } from '../components/Testimonials.jsx'
 import { FeedbackSection } from '../components/FeedbakSection.jsx'
 import Comentarios from '../components/comentarios.jsx'
+import MobileProjectCard from '../components/MobileProjectCard.jsx'
 
 function Home() {
     return (
@@ -36,6 +38,7 @@ function Home() {
       <Habilidades/>
       <Gow />
       <Fidelius />
+      <Walkme />
       <h2>Some of My Projects</h2>
       <Grid className='projetos' container spacing={1}   
         sx={{
@@ -48,6 +51,15 @@ function Home() {
               </Grid>
             ))}
       </Grid>
+      <section className="section-container">
+        <h2>Aplicativos Mobile</h2>
+        <div className="card-container">
+          {ProjetosMobile.map((projetoMobile, index) => (
+            <MobileProjectCard key={index} projeto={projetoMobile} />
+          ))}
+        </div>
+      </section>
+
       <a href="https://github.com/gustavobardavid" target='blank'>
         <h1>See All My Projects On GitHub   <span className="fab fa-github"></span></h1>
       </a>

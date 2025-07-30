@@ -1,17 +1,34 @@
 const ProjetosMobile = [
     {
     title: 'Walk.me',
-    subtitle: 'An online games store with Html and Css',
+    subtitle: 'An app to find dog walkers',
     img: 'assets/walk-front.jpeg',
-    link:  'https://gustavobardavid.github.io/site-de-ecommerce/',
-    git: 'https://github.com/gustavobardavid/site-de-ecommerce',
+    link:  '#',
+    git: 'https://github.com/gustavodevid/Front-Walk.me',
     tecnologies: [
       {
-        name: 'CSS',
+        name: 'React Native',
         color: 'primary'
     },
       {
-        name: 'HTML',
+        name: 'Expo App',
+        color: 'success'
+      }
+    ]
+  },
+  {
+    title: 'Nubank Redesign',
+    subtitle: 'An reimagination of Nubank App',
+    img: 'assets/nubank.png',
+    link:  '',
+    git: '',
+    tecnologies: [
+      {
+        name: 'Java + Kotlin',
+        color: 'primary'
+    },
+      {
+        name: 'Android Studio',
         color: 'success'
       }
     ]
