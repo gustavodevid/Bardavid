@@ -17,6 +17,10 @@ import Techstack from '../components/Techstack'
 import Gow from '../components/GowDB.tsx'
 import Fidelius from '../components/Fidelius.tsx'
 import Walkme from '../components/Walkmefront.tsx'
+import { ResumeDownload } from '../components/ResumeDownload.jsx'
+import { Testimonials } from '../components/Testimonials.jsx'
+import { FeedbackSection } from '../components/FeedbakSection.jsx'
+import Comentarios from '../components/comentarios.jsx'
 
 function Home() {
     return (
@@ -50,7 +54,8 @@ function Home() {
       <Techstack />
         <Logos logosData={logosData}/>  
       <Proposta />
-      <Cabecalho />
+      <FeedbackSection />
+      
       <footer>
       <Footer/>
       </footer>
