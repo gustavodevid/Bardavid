@@ -733,10 +733,20 @@ menu a:hover {
 }
 
 /* Enhanced tech icons */
+.tech-stack-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  gap: 16px;
+  justify-items: center;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
 .tech-icons {
-  font-size: 3rem !important;
-  margin: 15px !important;
-  padding: 20px !important;
+  font-size: 2.5rem !important;
+  margin: 12px !important;
+  padding: 16px !important;
   opacity: 0.95 !important;
   border: 2px solid var(--blue-200) !important;
   vertical-align: middle !important;
@@ -750,8 +760,8 @@ menu a:hover {
   transition: var(--transition-normal) !important;
   background: var(--gradient-accent) !important;
   color: var(--slate-50) !important;
-  width: 80px !important;
-  height: 80px !important;
+  width: 70px !important;
+  height: 70px !important;
   position: relative !important;
 }
 
@@ -798,6 +808,21 @@ menu a:hover {
 }
 
 /* Enhanced background sections */
+.gow-background,
+.walk-background,
+.inter-background {
+  width: 100%;
+  height: 50vh;
+  border-radius: var(--radius-lg);
+  background-size: cover;
+  background-position: center;
+  box-shadow: var(--shadow-lg);
+  transition: var(--transition-normal);
+  position: relative;
+  overflow: hidden;
+  margin: 20px 0;
+}
+
 .gow-background,
 .walk-background,
 .inter-background {
@@ -926,69 +951,72 @@ menu a:hover {
 
   .tech-stack-container {
     grid-template-columns: repeat(4, 1fr);
-    gap: 15px;
+    gap: 12px;
+    padding: 0 15px;
+    max-width: 100%;
   }
 
   .tech-icons {
-    width: 60px !important;
-    height: 60px !important;
-    font-size: 2rem !important;
-    margin: 10px !important;
-  }
-
-  .proposta {
-    margin: 30px 10px;
-    padding: 50px 20px;
-  }
-
-  .proposta button {
-    width: 100%;
-    min-width: auto;
+    width: 55px !important;
+    height: 55px !important;
+    font-size: 1.8rem !important;
+    margin: 8px !important;
+    padding: 12px !important;
   }
 
   .gow-background,
   .walk-background,
   .inter-background {
-    height: 40vh;
-  }
-
-  .footer-top-wrapper {
-    grid-template-columns: 1fr;
-    gap: 30px;
-    padding: 40px 20px;
+    height: 35vh;
+    border-radius: var(--radius-md);
+    margin: 15px 0;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .cert-item {
-    flex: 0 0 250px;
-  }
-
   .tech-stack-container {
     grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 0 10px;
   }
 
   .tech-icons {
     width: 50px !important;
     height: 50px !important;
     font-size: 1.5rem !important;
+    margin: 6px !important;
+    padding: 10px !important;
   }
 
-  .hello h3 {
-    font-size: 2rem;
+  .gow-background,
+  .walk-background,
+  .inter-background {
+    height: 30vh;
+    border-radius: var(--radius-sm);
+    margin: 10px 0;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .tech-stack-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    padding: 0 5px;
   }
 
-  h1 {
-    font-size: 1.3rem;
-    margin: 0 10px 30px 10px;
+  .tech-icons {
+    width: 45px !important;
+    height: 45px !important;
+    font-size: 1.3rem !important;
+    margin: 4px !important;
+    padding: 8px !important;
   }
 
-  .card-content {
-    padding: 1.5rem;
-  }
-
-  .proposta {
-    padding: 40px 15px;
+  .gow-background,
+  .walk-background,
+  .inter-background {
+    height: 25vh;
+    margin: 8px 0;
   }
 }
 
